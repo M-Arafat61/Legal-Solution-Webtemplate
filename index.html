@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts Poppins and EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-btn': '#B68C5A',
+                }
+            }
+        }
+    }
+    </script>
+    <!-- custom fonts -->
+    <style>
+        .font-garamond{font-family: 'EB Garamond', serif;}
+        .font-poppins{font-family: 'Poppins', sans-serif;}
+    </style>
+</head>
+<body class="bg-white">
+    <header class="max-w-screen-2xl mx-auto lg:px-48">
+
+        <!-- Navbar -->
+        <nav class=" space-y-5 py-12 flex flex-col font-poppins lg:flex-row justify-between items-center">
+                <img class="" src="./images/logo2.png" alt="">
+            <div class="">
+                <ul class="flex flex-row gap-5">
+                    <li>Home <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Services <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Cases <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Blog <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Contact Us<i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+            </div>
+            <div class=" ">
+                <button class="p-3 rounded-lg bg-primary-btn text-white text-base tracking-wider"><a href="">Free Consultation</a></button>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section>
+            <div class="hero fit lg:min-h-[calc(100vh-144px)]" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                    <div class="lg:px-32 space-y-5">
+                        <h1 class="text-white mb-5 text-6xl font-garamond font-extrabold">
+                            We Provide Effective <br>
+                            Legal Solutions
+                        </h1>
+                        <p class="mb-5 font-poppins text-base">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+                        <div class="flex flex-col lg:flex-row items-center lg:px-36 gap-4">
+                            <div class="flex-1">
+                                <input type="text" placeholder="Search your services" class="rounded-lg w-full h-12 pl-4" />
+                            </div>
+                            <button class="p-3 rounded-lg bg-primary-btn text-white text-base tracking-wider">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- Legal Practice Area -->
+        <section class="max-w-screen-2xl mx-auto lg:px-48 mt-24">
+            <div class="text-center lg:px-32 space-y-5 pt-6">
+                <h2 class="font-garamond font-extrabold text-4xl text-[#414040]">The Legal Practice Area</h2>
+                <p class="text-lg font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <!-- some law cards
+             -->
+
+            <div class="grid grid-cols-3 grid-rows-2 gap-0 mt-10">
+
+                <!-- Business Law -->
+                <div class="border-r border-b border-gray-100 text-center space-y-6 p-14">
+                    <div class="flex justify-center">
+                        <img src="./images/business.png" alt="">
+                    </div>
+                    <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">Business Law</h3>
+                    <p class="font-poppins text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button><img src="./images/Frame.png" alt=""></button>
+                </div>
+
+                <!-- Criminal Law -->
+                <div class="bg-gradient-to-r from-gray-50 to-gray-100 border-r border-b border-gray-100 text-center space-y-6 p-14">
+                    <div class="flex justify-center">
+                        <img src="./images/criminal.png" alt="">
+                    </div>
+                    <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">Criminal Law</h3>
+                    <p class="font-poppins text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button><img src="./images/Frame.png" alt=""></button>
+                </div>
+
+                <!-- Child Support -->
+                <div class="border-b border-gray-100 text-center space-y-6 p-14">
+                    <div class="flex justify-center">
+                        <img src="./images/child.png" alt="">
+                    </div>
+                    <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">Child Support</h3>
+                    <p class="font-poppins text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button><img src="./images/Frame.png" alt=""></button>
+                </div>
+
+                <!-- Education Law -->
+                <div class="border-r border-gray-100 text-center space-y-6 p-14">
+                    <div class="flex justify-center">
+                        <img src="./images/education.png" alt="">
+                    </div>
+                    <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">Education Law</h3>
+                    <p class="font-poppins text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button><img src="./images/Frame.png" alt=""></button>
+                </div>
+
+                <!-- Divorce Law -->
+                <div class="border-r border-gray-100 text-center space-y-6 p-14">
+                    <div class="flex justify-center">
+                        <img src="./images/divorce.png" alt="">
+                    </div>
+                    <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">Divorce Law</h3>
+                    <p class="font-poppins text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button><img src="./images/Frame.png" alt=""></button>
+                </div>
+
+                <!-- Tax Law -->
+                <div class="border-gray-100 text-center space-y-6 p-14">
+                    <div class="flex justify-center">
+                        <img src="./images/tax.png" alt="">
+                    </div>
+                    <h3 class="text-3xl font-extrabold font-garamond text-[#414040]">Tax Law</h3>
+                    <p class="font-poppins text-base text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button><img src="./images/Frame.png" alt=""></button>
+                </div>
+            
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
